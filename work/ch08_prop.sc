@@ -140,7 +140,7 @@ object prop {
   }
 
 	import Gen._
-  val smallInt = Gen.choose(-10, 10)              //> java.lang.StackOverflowError
+  val smallInt = Gen.choose(-2, 2)                //> java.lang.StackOverflowError
                                                   //| 	at prop$.Gen$lzycompute$1(prop.scala:40)
                                                   //| 	at prop$.prop$$Gen$2(prop.scala:40)
                                                   //| 	at prop$Gen$4$.<init>(prop.scala:45)
@@ -171,4 +171,5 @@ object prop {
     !ns.exists(_ > max)
   }
 */
+
 }
