@@ -1,5 +1,5 @@
 object getting_started {
-  println("Welcome to the Scala worksheet")       //> Welcome to the Scala worksheet
+  println("Welcome to the Scala worksheet")
 
   def isSorted[A](as: Array[A], gt: (A, A) => Boolean): Boolean = {
 
